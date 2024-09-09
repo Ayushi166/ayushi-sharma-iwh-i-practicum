@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    title= `${title}`
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    link(rel="stylesheet", href="/css/style.css")
+  body
+    h1 Update Custom Object Form
+    form(action="/update-cobj" method="POST")
+      .form-group
+        label(for="fruit_name") Fruit Name:
+        input(type="text" id="fruit_name" name="fruit_name" required)
+      .form-group
+        label(for="fruit_color") Fruit Color:
+        input(type="text" id="fruit_color" name="fruit_color" required)
+      .form-group
+        label(for="fruit_shape") Fruit Shape:
+        input(type="text" id="fruit_shape" name="fruit_shape" required)
+      button(type="submit") Create Custom Object Record
+    br
+    a(href="/") Return to the homepage
